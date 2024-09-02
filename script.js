@@ -20,9 +20,9 @@ function createCells() {
 function handleCellClick(event) {
   const cell = event.target;
 
-  // if (cell.textContent !== "") {
-  //   return;
-  // }
+  if (cell.textContent !== "") {
+    return;
+  }
 
   cell.style.color = currentPlayer === "X" ? "red" : "blue";
   cell.textContent = currentPlayer;
