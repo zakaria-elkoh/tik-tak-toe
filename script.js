@@ -45,18 +45,18 @@ function checkWin(index) {
   console.log("row:", row, "col:", col);
 
   return (
-    checkDirection(row, col, 0, 1) || // Check horizontal
-    checkDirection(row, col, 1, 0) || // Check vertical
-    checkDirection(row, col, 1, 1) || // Check diagonal down-right
-    checkDirection(row, col, 1, -1) // Check diagonal down-left
+    checkDirection(row, col, 0, 1) ||
+    checkDirection(row, col, 1, 0) ||
+    checkDirection(row, col, 1, 1) ||
+    checkDirection(row, col, 1, -1)
   );
 }
 
 function checkDirection(row, col, rowDir, colDir) {
   let count = 1;
 
-  count += countInDirection(row, col, rowDir, colDir); // Check in one direction
-  count += countInDirection(row, col, -rowDir, -colDir); // Check in the opposite direction
+  count += countInDirection(row, col, rowDir, colDir);
+  count += countInDirection(row, col, -rowDir, -colDir);
 
   return count >= winCondition;
 }
@@ -92,7 +92,7 @@ function showWinner() {
   document.querySelector(".winnerPopup .player").innerHTML = currentPlayer;
   document.querySelector(".winnerPopup").style.display = "flex";
   console.log("current player:", currentPlayer);
-  
+
   currentPlayer == "X" ? XPlayerScore++ : OPlayerScore++;
   document.querySelector(".player-x-score").innerHTML = XPlayerScore;
   document.querySelector(".player-o-score").innerHTML = OPlayerScore;

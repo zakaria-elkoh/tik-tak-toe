@@ -3,6 +3,7 @@
 }
 .playersContainer {
   display: flex;
+  
   justify-content: center;
   gap: 90px;
   font-size: 20px;
