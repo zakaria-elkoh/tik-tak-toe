@@ -10,7 +10,7 @@ function createCells() {
   for (let i = 0; i < gridSize * gridSize; i++) {
     const cell = document.createElement("div");
     cell.className = "cell";
-    cell.innerText = i;
+    // cell.innerText = i;
     cell.setAttribute("cellIndex", i);
     cell.addEventListener("click", handleCellClick);
     cellContainer.appendChild(cell);
