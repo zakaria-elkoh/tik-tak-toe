@@ -38,12 +38,3 @@ If you wish to modify the game, here are some key points:
 - **Game Logic:** The main game logic, including how player moves are processed and how wins are detected, is found in the `handleCellClick`, `checkWin`, and `countInDirection` functions in `script.js`.
 - **Styling:** Modify the `styles.css` file to change the look and feel of the game.
 
-### Adding Features
-
-- **AI Player:** You can add an AI opponent by modifying the `handleCellClick` function to include AI decision-making logic.
-- **Multiplayer Over Network:** Consider implementing a network-based multiplayer mode by integrating WebSockets or similar technology.
-- **Animations:** Add CSS animations to make the game more visually engaging.
-
-## License
-
-This project is open-source and available for modification and distribution under the MIT License.
